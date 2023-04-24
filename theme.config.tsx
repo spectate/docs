@@ -3,7 +3,7 @@ import {DocsThemeConfig, useConfig} from 'nextra-theme-docs'
 import {useRouter} from "next/router";
 
 const config: DocsThemeConfig = {
-    docsRepositoryBase: "https://github.com/spectate/docs",
+    docsRepositoryBase: "https://github.com/spectate/docs/tree/main",
     useNextSeoProps() {
         const {asPath} = useRouter()
         if (asPath !== '/') {
