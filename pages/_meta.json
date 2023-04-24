@@ -1,15 +1,14 @@
 {
   "index": "Introduction",
-  "another": "Another Page",
-  "advanced": "Advanced (A Folder)",
-  "about": {
-    "title": "About",
-    "type": "page"
-  },
+  "get-started": "Get started",
+  "teams": "Teams",
+  "status-pages": "Status pages",
+  "integrations": "Integrations",
+  "faq": "FAQ",
   "contact": {
-    "title": "Contact ↗",
+    "title": "Service Status ↗",
     "type": "page",
-    "href": "https://twitter.com/shuding_",
+    "href": "https://status.spectate.net",
     "newWindow": true
   }
 }
