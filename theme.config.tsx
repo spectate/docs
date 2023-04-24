@@ -48,6 +48,10 @@ const config: DocsThemeConfig = {
         )
     },
     logoLink: '/',
+    sidebar: {
+        defaultMenuCollapseLevel: 1,
+        toggleButton: true
+    },
     // banner: {
     //   key: '2.0-release',
     //   text: <a href="https://nextra.site" target="_blank">
