@@ -3,4 +3,12 @@ const withNextra = require('nextra')({
   themeConfig: './theme.config.tsx',
 })
 
-module.exports = withNextra({})
+const nextConfig = {
+  images: {
+    loader: "custom",
+    loaderFile: "./lib/imgixLoader.js",
+    domains: ["spectate.imgix.net"],
+  },
+};
+
+module.exports = withNextra(nextConfig)
