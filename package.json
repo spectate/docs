@@ -14,7 +14,7 @@
   "license": "MIT",
   "homepage": "https://docs.spectate.net",
   "dependencies": {
-    "next": "13.4.6",
+    "next": "13.4.8",
     "nextra": "latest",
     "nextra-theme-docs": "latest",
     "react": "^18.2.0",
@@ -22,10 +22,10 @@
     "sharp": "^0.32.1"
   },
   "devDependencies": {
-    "@cloudflare/next-on-pages": "^1.1.0",
-    "@types/node": "20.3.1",
+    "@cloudflare/next-on-pages": "^1.2.0",
+    "@types/node": "20.3.3",
     "next-on-pages-vercel-cli": "^29.3.0-next-on-pages-fix-3",
-    "typescript": "^5.1.3",
+    "typescript": "^5.1.6",
     "vercel": "^30.2.3",
     "wrangler": "^3.1.1"
   },
