@@ -14,7 +14,7 @@
   "license": "MIT",
   "homepage": "https://docs.spectate.net",
   "dependencies": {
-    "next": "13.4.8",
+    "next": "13.4.18",
     "nextra": "latest",
     "nextra-theme-docs": "latest",
     "react": "^18.2.0",
