@@ -4,11 +4,11 @@ const withNextra = require('nextra')({
 })
 
 const nextConfig = {
-  images: {
+  images: process.env.NODE_ENV === "production" ? {
     loader: "custom",
     loaderFile: "./lib/imgixLoader.js",
     domains: ["spectate.imgix.net"],
-  },
+  } : undefined,
 };
 
 module.exports = withNextra(nextConfig)
