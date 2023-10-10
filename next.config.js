@@ -6,8 +6,8 @@ const withNextra = require('nextra')({
 const nextConfig = {
   images: process.env.NODE_ENV === "production" ? {
     loader: "custom",
-    loaderFile: "./lib/imgixLoader.js",
-    domains: ["spectate.imgix.net"],
+    loaderFile: "./lib/cfImagesLoader.js",
+    domains: ["docs.spectate.net"],
   } : undefined,
 };
 
