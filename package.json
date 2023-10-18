@@ -22,7 +22,7 @@
     "sharp": "^0.32.6"
   },
   "devDependencies": {
-    "@cloudflare/next-on-pages": "^1.6.3",
+    "@cloudflare/next-on-pages": "^1.7.0",
     "@types/node": "20.8.4",
     "next-on-pages-vercel-cli": "^29.3.0-next-on-pages-fix-3",
     "typescript": "^5.2.2",
