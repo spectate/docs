@@ -21,29 +21,29 @@ The test notification has the following payload:
 
 The payload is a JSON object with the following properties:
 
-| Property                   | Description                                                                                    |
-|----------------------------|------------------------------------------------------------------------------------------------|
-| `check`                    | The type of check that was performed.<br/>Possible values: `uptime`, `certificate`             |
-| `status`                   | The status of the check.<br/>Possible values: `recovered`, `down`                              |
-| `incident`                 | The incident that was created.                                                                 |
-| `incident.id`              | The ID of the incident.                                                                        |
-| `incident.started_at`      | The date and time the incident was created.                                                    |
-| `incident.resolved_at`     | The date and time the incident was resolved. Only provided in recovered notifications.         |
-| `incident.reason`          | The reason the incident was created.                                                           |
-| `incident.severity`        | The severity of the incident.<br/>Possible values: `critical`, `high`, `medium`, `low`, `none` |
-| `monitor`                  | The monitor that was checked.                                                                  |
-| `monitor.id`               | The ID of the monitor.                                                                         |
-| `monitor.label`            | The label of the monitor.                                                                      |
-| `monitor.url`              | The URL of the monitor.                                                                        |
-| `heartbeats`               | Array containing the heartbeats leading to the notification.                                   |
-| `heartbeats.id`            | The ID of the heartbeat.                                                                       |
-| `heartbeats.protocol`      | The protocol of the heartbeat.<br/>Possible values: `http`, `https`, `icmp`                    |
-| `heartbeats.location`      | The location of the heartbeat.<br/>Possible values: `ams`, `mia`, `syd`, `nbg`,                |
-| `heartbeats.http_url`      | The URL of the heartbeat.                                                                      |
-| `heartbeats.response_time` | The response time of the heartbeat.                                                            |
-| `heartbeats.status_code`   | The status code of the heartbeat.                                                              |
-| `heartbeats.packet_loss`   | The packet loss of the heartbeat.                                                              |
-| `heartbeats.alive`         | Whether the heartbeat is alive.<br/>Possible values: `true`, `false`                           |
+| Property                   | Description                                                                                                |
+|----------------------------|------------------------------------------------------------------------------------------------------------|
+| `check`                    | The type of check that was performed.<br/>Possible values: `uptime`, `certificate`                         |
+| `status`                   | The status of the check.<br/>Possible values: `recovered`, `down`                                          |
+| `incident`                 | The incident that was created.                                                                             |
+| `incident.id`              | The ID of the incident.                                                                                    |
+| `incident.started_at`      | The date and time the incident was created.                                                                |
+| `incident.resolved_at`     | The date and time the incident was resolved. Only provided in recovered notifications.                     |
+| `incident.reason`          | The reason the incident was created.                                                                       |
+| `incident.severity`        | The severity of the incident.<br/>Possible values: `critical`, `high`, `medium`, `low`, `none`             |
+| `monitor`                  | The monitor that was checked.                                                                              |
+| `monitor.id`               | The ID of the monitor.                                                                                     |
+| `monitor.label`            | The label of the monitor.                                                                                  |
+| `monitor.url`              | The URL of the monitor.                                                                                    |
+| `heartbeats`               | Array containing the heartbeats leading to the notification.                                               |
+| `heartbeats.id`            | The ID of the heartbeat.                                                                                   |
+| `heartbeats.protocol`      | The protocol of the heartbeat.<br/>Possible values: `http`, `https`, `icmp`                                |
+| `heartbeats.location`      | The location of the heartbeat.<br/>Possible values: `ams`, `blr`, `fns`, `lon`, `nyc`, `sfo`, `sgp`, `syd` |
+| `heartbeats.http_url`      | The URL of the heartbeat.                                                                                  |
+| `heartbeats.response_time` | The response time of the heartbeat.                                                                        |
+| `heartbeats.status_code`   | The status code of the heartbeat.                                                                          |
+| `heartbeats.packet_loss`   | The packet loss of the heartbeat.                                                                          |
+| `heartbeats.alive`         | Whether the heartbeat is alive.<br/>Possible values: `true`, `false`                                       |
 
 ## Custom Headers
 
