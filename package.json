@@ -23,7 +23,7 @@
   },
   "devDependencies": {
     "@cloudflare/next-on-pages": "^1.8.3",
-    "@types/node": "20.10.6",
+    "@types/node": "20.11.21",
     "next-on-pages-vercel-cli": "^29.3.0-next-on-pages-fix-3",
     "typescript": "^5.3.3",
     "wrangler": "^3.22.3"
