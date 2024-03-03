@@ -14,18 +14,18 @@
   "license": "MIT",
   "homepage": "https://docs.spectate.net",
   "dependencies": {
-    "next": "14.0.4",
-    "nextra": "latest",
-    "nextra-theme-docs": "latest",
+    "next": "14.1.1",
+    "nextra": "^2.13.4",
+    "nextra-theme-docs": "^2.13.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "sharp": "^0.33.1"
+    "sharp": "^0.33.2"
   },
   "devDependencies": {
-    "@cloudflare/next-on-pages": "^1.8.3",
-    "@types/node": "20.10.6",
+    "@cloudflare/next-on-pages": "^1.9.0",
+    "@types/node": "20.11.24",
     "next-on-pages-vercel-cli": "^29.3.0-next-on-pages-fix-3",
     "typescript": "^5.3.3",
-    "wrangler": "^3.22.2"
+    "wrangler": "^3.30.1"
   }
 }
