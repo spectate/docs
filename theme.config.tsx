@@ -73,7 +73,7 @@ const config: DocsThemeConfig = {
                 </p>
                 <p style={{
                     fontSize: '0.75rem',
-                    color: 'rgb(152 162 179'
+                    color: 'rgb(152 162 179)'
                 }}>
                     Spectate is a registered trademark of Realify.
                 </p>
