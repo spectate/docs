@@ -7,7 +7,7 @@
   "domains": "Domain name monitoring",
   "status-pages": "Status pages",
   "incidents": "Incidents",
-  "integrations": "Integrations",
+  "alerting": "Alerting",
   "faq": "FAQ",
   "contact": {
     "title": "Service Status ↗",

@@ -1,5 +1,67 @@
-# Incidents
+# Alerting
 
-An incident is a single event that has caused a disruption to the normal operation of a service. They are created automatically when a service is detected as being down and are resolved when the service is detected as being up again.
+With Spectate's alerting, you can receive notifications when an event of incident occurs. You can configure notification channels to send notifications to your team's Slack, Discord, email, or even your phone.
 
-Using incidents, you can collect information about what happened, how it was resolved, and how long it took to resolve. This information can be used to improve your service and to create reports for your customers.
+## Integrations
+
+### Adding an integration
+
+Adding an integration is simple. Go to `Integrations` in the sidebar and you'll land on the `Available integrations` page. From here, click on `Configure` next to the integration you want to add.
+
+import {Callout, Card, Cards} from "nextra-theme-docs";
+
+<Callout>
+    We are always looking to add more integrations. If you have a suggestion, please suggest it on our [roadmap](https://roadmap.spectate.net).
+</Callout>
+
+### Managing an integration
+
+You can see all your configured integrations in the `Configurations` tab. From here, you can edit or delete an integration and see how many monitors or domains are using this integration.
+
+import Image from "next/image";
+
+<Image src="/images/integrations-manage.jpeg" alt="Integrations" width={800} height={400}/>
+
+### Available integrations
+
+The following integrations are available:
+
+import SvgPhone from "../../components/integrations/Phone";
+import SvgSms from "../../components/integrations/Sms";
+import SvgSlack from "../../components/integrations/Slack";
+import SvgDiscord from "../../components/integrations/Discord";
+import SvgMail from "../../components/integrations/Mail";
+import SvgPushover from "../../components/integrations/Pushover";
+import SvgTelegram from "../../components/integrations/Telegram";
+import SvgWebhooks from "../../components/integrations/Webhooks";
+
+<Cards>
+    <Card href="/alerting/integrations/voice" title="Voice" icon={<SvgPhone height={24} width={24}/>} arrow/>
+    <Card href="/alerting/integrations/sms" title="SMS" icon={<SvgSms height={24} width={24}/>} arrow/>
+    <Card href="/alerting/integrations/slack" title="Slack" icon={<SvgSlack height={24} width={24}/>} arrow/>
+    <Card href="/alerting/integrations/discord" title="Discord" icon={<SvgDiscord height={24} width={24}/>} arrow/>
+    <Card href="/alerting/integrations/email" title="Email" icon={<SvgMail height={24} width={24}/>} arrow/>
+    <Card href="/alerting/integrations/pushover" title="Pushover" icon={<SvgPushover height={24} width={24}/>} arrow/>
+    <Card href="/alerting/integrations/telegram" title="Telegram" icon={<SvgTelegram height={24} width={24}/>} arrow/>
+    <Card href="/alerting/integrations/webhook" title="Webhooks" icon={<SvgWebhooks height={24} width={24}/>} arrow/>
+</Cards>
+
+## Voice/SMS credits
+
+Voice and SMS notifications are a paid add-on. Every time a voice notification is triggered, 2 credits is deducted from your account. Every time an SMS notification is triggered, 1 credit are deducted from your account.
+
+
+<Callout type="info">
+    In the **Pro** and **Scale** plans, you receive 25 and 100 voice/SMS credits per month respectively.
+</Callout>
+
+You can purchase additional voice and SMS credits from your team's [billing](https://app.spectate.net/team/billing) page.
+
+## Test notifications
+
+You can send a test notification to a notification channel to make sure it's working as expected. To do so, click three dots next to the notification channel and select **Send test notification**.
+
+<Callout type="warning">
+    Keep in mind that sending a test notification for voice and SMS channels will deduct credits from your account. However, testing a voice channel will only deduct 1 credit instead of 2 as it sends an SMS first.
+</Callout>
+
