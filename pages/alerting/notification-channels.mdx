@@ -1,0 +1,53 @@
+# Notification channels
+
+A notification channel is a way to receive notifications when an incident is triggered. You can create as many notification channels as you want, and you can use the same channel multiple times.
+
+## Tags
+
+You can add tags to a notification channel so it only triggers for incidents caused by monitors with the same tags. For example, you can create a notification channel that only triggers for incidents caused by monitors with the tag `production`.
+
+For more information, refer to the [monitor tags](/monitors/tags) section.
+
+## Voice/SMS credits
+
+Voice and SMS notifications are a paid add-on. Every time a voice notification is triggered, 2 credits is deducted from your account. Every time an SMS notification is triggered, 1 credit are deducted from your account.
+
+import {Callout} from "nextra-theme-docs";
+
+<Callout type="info">
+In the **Pro** and **Scale** plans, you receive 25 and 100 voice/SMS credits per month respectively.
+</Callout>
+
+You can purchase additional voice and SMS credits from your team's [billing](https://app.spectate.net/team/billing) page.
+
+## Test notifications
+
+You can send a test notification to a notification channel to make sure it's working as expected. To do so, click three dots next to the notification channel and select **Send test notification**.
+
+<Callout type="warning">
+Keep in mind that sending a test notification for voice and SMS channels will deduct credits from your account. However, testing a voice channel will only deduct 1 credit instead of 2 as it sends an SMS first.
+</Callout>
+
+## Integrations
+
+The following integrations are available:
+
+import {Card, Cards} from "nextra-theme-docs";
+import SvgPhone from "../../components/integrations/Phone";
+import SvgSms from "../../components/integrations/Sms";
+import SvgSlack from "../../components/integrations/Slack";
+import SvgDiscord from "../../components/integrations/Discord";
+import SvgGmail from "../../components/integrations/Gmail";
+import SvgPushover from "../../components/integrations/Pushover";
+import SvgTelegram from "../../components/integrations/Telegram";
+import SvgWebhooks from "../../components/integrations/Webhooks";
+
+<Cards>
+    <Card href="/integrations/voice" title="Voice" icon={<SvgPhone height={24} width={24} />} arrow />
+    <Card href="/integrations/sms" title="SMS" icon={<SvgSms height={24} width={24} />} arrow />
+    <Card href="/integrations/slack" title="Slack" icon={<SvgSlack height={24} width={24} />} arrow />
+    <Card href="/integrations/discord" title="Discord" icon={<SvgDiscord height={24} width={24} />} arrow />
+    <Card href="/integrations/email" title="Email" icon={<SvgGmail height={24} width={24} />} arrow />
+    <Card href="/integrations/pushover" title="Pushover" icon={<SvgPushover height={24} width={24} />} arrow />
+    <Card href="/integrations/webhook" title="Webhooks" icon={<SvgWebhooks height={24} width={24} />} arrow />
+</Cards>
