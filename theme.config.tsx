@@ -29,7 +29,7 @@ const config: DocsThemeConfig = {
             </>
         )
     },
-    primaryHue: 188,
+    primaryHue: 55.1,
     logo: () => {
         return (
             <>
