@@ -87,6 +87,7 @@
             "features/teams/team-members"
           ]
         },
+        "features/projects",
         {
           "group": "Website monitoring",
           "pages": [
