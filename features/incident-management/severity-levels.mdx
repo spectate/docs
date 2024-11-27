@@ -1,0 +1,33 @@
+---
+title: Severity levels
+description: 'Understand the severity of an incident.'
+---
+
+To make it easier to understand the severity of an incident, we have created a severity scale.
+
+## What severity is assigned to an incident?
+
+Based on the check that failed, the severity is assigned to the incident. For example, if a certificate is expiring in 14 days, the severity is `Medium`. If the service is unreachable, the severity is `Critical`.
+
+A list of severities and their check types can be found below.
+
+| Check                               | Severity |
+|-------------------------------------|----------|
+| Uptime heartbeat                    | Critical |
+| SSL certificate expired             | Critical |
+| Domain expired                      | High     |
+| Hard performance threshold exceeded | Medium   |
+| Median performance increased        | Medium   |
+| Domain expires soon                 | Low      |
+| SSL certificate expires soon        | Low      |
+
+
+## Severity scale
+
+| Severity | Description                                                                                                                                              |
+|----------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Critical | The service is unreachable or unusable. For example, two consecutive heartbeats of an HTTPS monitor failed.                                              |
+| High     | Impact on the service related to the incident is noticeable and requires action.                                                                         |
+| Medium   | This severity is important, but does not immediately impact service availability. It is assigned to incidents such as a certificate expiring in 14 days. |
+| Low      | Events that happened, but do not impact service availability directly. For example when a certificate change was detected.                               |
+| None     | Purely informational, used by i.e. resolved notifications.                                                                                               |

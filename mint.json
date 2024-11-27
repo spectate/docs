@@ -1,0 +1,195 @@
+{
+  "$schema": "https://mintlify.com/schema.json",
+  "name": "Spectate Docs",
+  "logo": {
+    "dark": "/logo/dark.svg",
+    "light": "/logo/light.svg",
+    "href": "https://spectate.net"
+  },
+  "favicon": "/favicon.svg",
+  "colors": {
+    "primary": "#FFEA00",
+    "light": "#decb00",
+    "dark": "#FFEA00",
+    "anchors": {
+      "from": "#807500",
+      "to": "#decb00"
+    }
+  },
+  "background": {
+    "style": "windows"
+  },
+  "font": {
+    "headings": {
+      "family": "Geist"
+    },
+    "body": {
+      "family": "Geist"
+    }
+  },
+  "modeToggle": {
+    "default": "dark",
+    "isHidden": true
+  },
+  "topbarLinks": [
+    {
+      "name": "Service status",
+      "url": "https://status.spectate.net"
+    },
+    {
+      "name": "Support",
+      "url": "mailto:help@spectate.net"
+    }
+  ],
+  "topbarCtaButton": {
+    "name": "Dashboard",
+    "url": "https://app.spectate.net"
+  },
+  "tabs": [],
+  "anchors": [
+    {
+      "name": "Documentation",
+      "icon": "book-open-cover",
+      "url": "https://docs.spectate.net"
+    },
+    {
+      "name": "Community",
+      "icon": "discord",
+      "url": "https://spectate.net/r/discord"
+    },
+    {
+      "name": "Blog",
+      "icon": "newspaper",
+      "url": "https://spectate.net/blog"
+    },
+    {
+      "name": "Changelog",
+      "icon": "list",
+      "url": "https://spectate.net/changelog"
+    }
+  ],
+  "navigation": [
+    {
+      "group": "Get Started",
+      "pages": [
+        "introduction",
+        "get-started/sign-up",
+        "get-started/create-a-team",
+        "get-started/your-first-monitor"
+      ]
+    },
+    {
+      "group": "Features",
+      "pages": [
+        {
+          "group": "Teams",
+          "pages": [
+            "features/teams/team-members"
+          ]
+        },
+        {
+          "group": "Website monitoring",
+          "pages": [
+            "features/website-monitoring/overview",
+            {
+              "group": "Checks",
+              "pages": [
+                "features/website-monitoring/checks/uptime-monitoring",
+                "features/website-monitoring/checks/performance-monitoring",
+                "features/website-monitoring/checks/ssl-monitoring"
+              ]
+            },
+            "features/website-monitoring/dashboard",
+            "features/website-monitoring/locations",
+            "features/website-monitoring/pause-and-delete",
+            "features/website-monitoring/protocols"
+          ]
+        },
+        {
+          "group": "Server monitoring",
+          "pages": [
+            "features/server-monitoring/overview",
+            {
+              "group": "Dashboards",
+              "pages": [
+                "features/server-monitoring/dashboards/overview",
+                "features/server-monitoring/dashboards/performance",
+                "features/server-monitoring/dashboards/disk-usage",
+                "features/server-monitoring/dashboards/network"
+              ]
+            },
+            "features/server-monitoring/agent"
+          ]
+        },
+        {
+          "group": "Domain name monitoring",
+          "pages": [
+            "features/domains/overview",
+            "features/domains/dashboard",
+            "features/domains/checks",
+            "features/domains/pause-and-delete"
+          ]
+        },
+        {
+          "group": "Status pages",
+          "pages": [
+            "features/status-pages/automation",
+            "features/status-pages/branding",
+            "features/status-pages/components",
+            "features/status-pages/custom-domains",
+            "features/status-pages/incidents",
+            "features/status-pages/security",
+            "features/status-pages/subscriptions",
+            "features/status-pages/user-reports"
+          ]
+        },
+        {
+          "group": "Incident management",
+          "pages": [
+            "features/incident-management/overview",
+            "features/incident-management/settings",
+            "features/incident-management/details",
+            "features/incident-management/incident-ai",
+            "features/incident-management/screenshots",
+            "features/incident-management/severity-levels",
+            "features/incident-management/smart-incident-merging",
+            "features/incident-management/timeline"
+          ]
+        },
+        {
+          "group": "Alerting",
+          "pages": [
+            "features/alerting/overview",
+            "features/alerting/alert-policies",
+            {
+              "group": "Integrations",
+              "pages": [
+                "features/alerting/integrations/slack",
+                "features/alerting/integrations/discord",
+                "features/alerting/integrations/microsoft-teams",
+                "features/alerting/integrations/pushover",
+                "features/alerting/integrations/telegram",
+                "features/alerting/integrations/webhook",
+                "features/alerting/integrations/email",
+                "features/alerting/integrations/sms",
+                "features/alerting/integrations/voice"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "group": "FAQ",
+      "pages": [
+        "faq/uptime-monitor-bot",
+        "faq/ip-addresses"
+      ]
+    }
+  ],
+  "footerSocials": {
+    "x": "https://x.com/spectate_hq",
+    "github": "https://github.com/spectate",
+    "linkedin": "https://linkedin.com/company/spectatehq"
+  }
+}

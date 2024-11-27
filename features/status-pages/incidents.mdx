@@ -1,0 +1,76 @@
+---
+title: Incidents
+description: 'Communicate incidents with your users.'
+---
+
+Status page incidents are different from the incidents that are created in the incidents module. Status page incidents are created when a status page is created and are used to track the status of the status page. This allows you to publicly display the status of your status page without having to be afraid of sharing sensitive information.
+
+## Overview
+
+The overview shows a list of all current and past incidents on your status page. An incident has one of the following statuses:
+* Investigating
+    * Used for incidents that are currently being investigated.
+* Identified
+    * Used for incidents of which the root cause has been identified.
+* Monitoring
+    * Used for incidents for which a fix is implemented but not yet verified.
+* Resolved
+    * Used for incidents that are resolved and verified.
+    * _Note: Resolved incidents are automatically hidden after 14 days_
+
+## Creating an incident
+
+To create an incident, click the "New incident" button in the top right corner of the overview. You will be presented with a form to fill in the details of the incident.
+
+### Title
+
+The incident title is the title of the incident. This is the title that will be displayed on the status page.
+
+### Impact
+
+Depending on the impact of the incident, you can select one of the following impact levels:
+* Operational
+    * The incident has no impact on the service.
+* Degraded Performance
+    * The incident has a minor impact on the service.
+* Partial Outage
+    * The incident has a major impact on the service.
+* Major Outage
+    * The incident has a critical impact on the service.
+* Under Maintenance
+    * You are performing maintenance on the service.
+
+<Info>
+    **How to determine the impact of an incident?**<br/>
+    We recommend you to carefully assess the impact of an incident. Consider how many users are affected, how long the incident has been going on, and how much revenue is lost.
+    If you are unsure about the impact of an incident, you can always change the impact level later.
+</Info>
+
+### Status
+
+The status of the incident. You can select one of the following statuses:
+* Investigating
+    * Used for incidents that are currently being investigated.
+* Identified
+    * Used for incidents of which the root cause has been identified.
+* Monitoring
+    * Used for incidents for which a fix is implemented but not yet verified.
+* Resolved
+    * Used for incidents that are resolved and verified.
+    * _Note: Resolved incidents are automatically hidden after 14 days_
+
+### Message
+
+This will be the message that will be displayed on the status page.
+
+### Affected components
+
+You can select one or more components that are affected by the incident. This will be displayed on the status page and their status will be updated to the selected impact.
+
+## Posting an update
+
+To post an incident update, open the incident you want to post an update for and click on the "Post an update" button. You will be presented with a form to fill in the details of the update.
+
+This form is similar to the form used to create an incident, but it does not have the fields `Title` and `Impact`. These fields are already filled in with the values of the incident.
+
+If you want to change the title or impact of the incident, you can do so by editing the incident from the incident details page.

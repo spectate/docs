@@ -1,0 +1,30 @@
+---
+title: Protocols
+---
+
+Monitors are not just simple website uptime checkers. They can be used to monitor any kind of service, including APIs, TCP services, and more.
+
+## Available protocols
+
+Please refer to the list below for the available protocols. Not all checks are available for all protocols.
+
+### HTTP
+
+HTTP checks are used to monitor websites and web applications.
+
+SSL certificate checks are not available for HTTP checks. If you need to check the validity of the SSL certificate, please use choose HTTPS instead.
+
+### HTTPS
+
+HTTPS checks are used to monitor websites and web applications that use HTTPS. They are the most common type of check.
+
+The difference between HTTP and HTTPS checks is that HTTPS checks use SSL/TLS to encrypt the connection between the monitor and the target.
+Performance metrics will include the SSL/TLS handshake time.
+
+SSL certificate checks are also available. They can be used to check the validity of the SSL certificate.
+
+### ICMP (Ping)
+
+ICMP checks are used to check the availability of a host. They are the most basic type of check.
+
+_More supported protocols are coming soon._

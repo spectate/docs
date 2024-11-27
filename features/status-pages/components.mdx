@@ -1,0 +1,47 @@
+---
+title: Components
+description: 'Create and manage your status page components.'
+---
+
+Status page components are the building blocks of your status page. They are the services that you want to track and report on. You can create as many components as you want, and you can group them into categories (coming soon).
+
+## Manage components
+
+### Creating a component
+
+To create a component, click on the "Components" tab in the sidebar, and then click the "Create component" button.
+
+You will be presented with a form to fill out. The only required field is the name of the component. You can also add a description, and set a related monitor to automatically update the status of the component.
+
+#### Related monitor
+
+If you have a monitor set up in Spectate, you can link it to a component. When the monitor is updated, the component will automatically update its status.
+This is required in order to make use of [automation](/features/status-pages/automation).
+
+### Updating a component
+
+To update a component, click on the "Components" tab in the sidebar, and then click the Pencil icon button next to the component you want to update.
+
+You will be presented with a form to fill out. You can update the name, description, and related monitor.
+
+### Deleting a component
+
+To delete a component, click on the "Components" tab in the sidebar, and then click the Trash icon button next to the component you want to delete.
+
+### Reordering components
+
+To change the order of the components, simply drag and drop them into the order you want and click the "Save" button.
+
+## Component status
+
+When you create an [incident](/features/status-pages/incidents), you can select which components are affected. This will automatically update the status of the component.
+
+Your components can have one of the following statuses:
+
+* Operational
+* Degraded performance
+* Partial outage
+* Major outage
+* Under maintenance
+
+Your status page will always show the most severe status of all the components. For example, if you have a component with a status of "Degraded performance" and another component with a status of "Partial outage", your status page will show a status of "Partial outage".

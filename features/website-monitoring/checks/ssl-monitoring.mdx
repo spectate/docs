@@ -1,0 +1,32 @@
+---
+title: SSL monitoring
+description: 'Monitor the health of your website''s SSL certificate.'
+---
+
+SSL monitoring allows you to monitor the SSL certificate of your website. It monitors the certificate expiration date, the certificate issuer, and the certificate subject.
+
+This check is performed every 15 minutes.
+
+<Info>
+This setting is only available for HTTPS monitors.
+</Info>
+
+## Configuration
+
+The only setting available for SSL monitoring is the enable/disable toggle. When enabled, the monitor will check the SSL certificate of the website.
+
+## Performed checks
+
+### Certificate expires soon
+
+This check will trigger when the SSL certificate expires in less than 14 days and an incident will be created.
+Depending on the incident notification settings, you will receive a notification.
+
+### Certificate expired
+
+This check will trigger when the SSL certificate has expired and an incident will be created.
+Depending on the incident notification settings, you will receive a notification.
+
+### Certificate changed
+
+If a change is detected in the SSL certificate, this check will trigger. No incident will be created, but you will receive a notification.

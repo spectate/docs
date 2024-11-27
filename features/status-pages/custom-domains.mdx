@@ -1,0 +1,24 @@
+---
+title: Custom domains
+description: 'Use a custom domain for your status page.'
+---
+
+It is possible to use a custom (sub)domain for your status page and is a great way to brand your status page.
+
+Make sure you have a registered domain and have access to the DNS settings of the domain.
+
+## How to set up a custom domain
+
+1. Go to the **Settings** page of your status page and scroll to the **Custom domain** section.
+2. Enter the domain you want to use and click **Save**.
+
+## Configure your DNS
+
+Once you have set up your custom domain, you will need to configure your DNS to point to Spectate.
+
+This is done by adding a CNAME record to your DNS settings. The CNAME record should point to `cname.spectate.page`.
+
+An example of a CNAME record for the domain `status.spectate.net` on Cloudflare:
+
+![CNAME record on Cloudflare](/images/cloudflare-cname-record.png)
+

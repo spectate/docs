@@ -1,0 +1,59 @@
+---
+title: Alerting
+description: 'Receive notifications when an event of incident occurs.'
+---
+
+With Spectate's alerting, you can receive notifications when an event of incident occurs. You can configure notification channels to send notifications to your team's Slack, Discord, email, or even your phone.
+
+## Integrations
+
+### Adding an integration
+
+Adding an integration is simple. Go to `Integrations` in the sidebar and you'll land on the `Available integrations` page. From here, click on `Configure` next to the integration you want to add.
+
+<Tip>
+    We are always looking to add more integrations. If you have a suggestion, please suggest it on our [roadmap](https://roadmap.spectate.net).
+</Tip>
+
+### Managing an integration
+
+You can see all your configured integrations in the `Configurations` tab. From here, you can edit or delete an integration and see how many monitors or domains are using this integration.
+
+<Frame>
+    <img src="/images/integrations-manage.jpeg" alt="Integrations" width={800} height={400}/>
+</Frame>
+
+### Available integrations
+
+The following integrations are available:
+
+<CardGroup cols={3}>
+    <Card horizontal href="/features/alerting/integrations/voice" title="Voice" icon={<img src="/images/phone.svg" height={24} width={24}/>}/>
+    <Card horizontal href="/features/alerting/integrations/sms" title="SMS" icon={<img src="/images/sms.svg" height={24} width={24}/>}/>
+    <Card horizontal href="/features/alerting/integrations/email" title="Email" icon={<img src="/images/gmail.svg" height={24} width={24}/>}/>
+    <Card horizontal href="/features/alerting/integrations/slack" title="Slack" icon={<img src="/images/slack.svg" height={24} width={24}/>}/>
+    <Card horizontal href="/features/alerting/integrations/microsoft-teams" title="Microsoft Teams" icon={<img src="/images/ms-teams.svg" height={24} width={24}/>}/>
+    <Card horizontal href="/features/alerting/integrations/discord" title="Discord" icon={<img src="/images/discord.svg" height={24} width={24}/>}/>
+    <Card horizontal href="/features/alerting/integrations/pushover" title="Pushover" icon={<img src="/images/pushover.svg" height={24} width={24}/>}/>
+    <Card horizontal href="/features/alerting/integrations/telegram" title="Telegram" icon={<img src="/images/telegram.svg" height={24} width={24}/>}/>
+    <Card horizontal href="/features/alerting/integrations/webhook" title="Webhooks" icon={<img src="/images/webhooks.svg" height={24} width={24}/>}/>
+</CardGroup>
+
+## Voice/SMS credits
+
+Voice and SMS notifications are a paid add-on. Every time a voice notification is triggered, 2 credits is deducted from your account. Every time an SMS notification is triggered, 1 credit are deducted from your account.
+
+<Info>
+    In the **Pro** and **Scale** plans, you receive 25 and 100 voice/SMS credits per month respectively. Business plan users receive **unlimited** voice/SMS credits.
+</Info>
+
+You can purchase additional voice and SMS credits from your team's [billing](https://app.spectate.net/team/billing) page.
+
+## Test notifications
+
+You can send a test notification to a notification channel to make sure it's working as expected. To do so, click three dots next to the notification channel and select **Send test notification**.
+
+<Warning>
+    Keep in mind that sending a test notification for voice and SMS channels will deduct credits from your account. However, testing a voice channel will only deduct 1 credit instead of 2 as it sends an SMS first.
+</Warning>
+

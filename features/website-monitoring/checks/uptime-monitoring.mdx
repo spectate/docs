@@ -1,0 +1,102 @@
+---
+title: Uptime monitoring
+description: 'Monitor your website, API or application''s uptime.'
+---
+
+Uptime monitoring is a service that checks the availability of your website or application.
+
+## Basic configuration
+
+Uptime monitoring is enabled for all websites and applications. You can configure the following settings.
+
+### Interval
+
+The interval at which the service checks the availability of your website or application. The default interval is 5 minutes.
+
+You can choose from the following intervals:
+* 30 seconds
+* 1 minute
+* 2 minutes
+* 5 minutes
+* 10 minutes
+* 15 minutes
+* 30 minutes
+* 1 hour
+
+<Info>
+The 30 seconds interval is only available on the **Pro** and higher plans.
+</Info>
+
+### HTTP method
+
+The HTTP method used during the request that checks the availability of your website or application. The default method is GET.
+
+You can choose from the following methods:
+* GET
+* POST
+* PUT
+* PATCH
+* DELETE
+* HEAD
+
+### Time-out
+
+The time-out for the monitor in seconds. If the monitor does not respond within this time, it will be considered as down. The default time-out is 5 seconds.
+
+### Connection time-out
+
+The connection time-out for the monitor in seconds. If the monitor does not connect within this time, it will be considered as down. The default connection time-out is 15 seconds.
+
+### Max. redirects
+
+The maximum number of redirects that the monitor will follow. The default value is 3.
+
+### Allow insecure requests
+
+If enabled, the monitor will allow insecure requests. This means that the monitor will not check the validity of the SSL certificate.
+
+<Info>
+This setting is only available for HTTPS monitors.
+</Info>
+
+### Keyword
+
+You can configure a keyword that the check will expect or not expect to be present in the response body.
+
+Set the `Response should include the keyword` option to `Yes` if you want the check to expect the keyword to be present in the response body.
+
+Set the `Response should include the keyword` option to `No` if you want the check to expect the keyword to not be present in the response body.
+
+Depending on the above setting, you can configure the keyword. You will be notified if the keyword is not present or is present in the response body.
+
+### Expected HTTP status code
+
+The expected HTTP status code for the request that checks the availability of your website or application. The default expected status code is `2*`.
+
+You can use wildcards and multiple status codes by separating them with commas. For example, `2*,301` will match 301 and any 2xx status code.
+
+You can find a list of all HTTP status codes on [MDN](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status).
+
+
+## Advanced configuration
+
+The following settings are considered more advanced and empty by default.
+
+### HTTP authentication
+
+You can configure HTTP authentication for the request that checks the availability of your website or application.
+
+The following types of authentication are supported:
+* Basic
+* Digest
+* Bearer
+
+### HTTP headers
+
+You can add custom HTTP headers to the request that checks the availability of your website or application.
+
+### User agent
+
+You can configure the user agent for the request that checks the availability of your website or application.
+
+Find more about the default user agent [here](/faq/uptime-monitor-bot).

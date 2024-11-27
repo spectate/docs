@@ -1,0 +1,81 @@
+---
+title: Agent (spectated)
+---
+
+## What is it?
+
+The Spectate Agent is a really small application that runs on your server as service and sends data to the Spectate API. It's written in Go and is designed to be as simple as possible.
+
+Installation is as simple as running a single command and you're done. The agent will automatically start sending data to the Spectate API.
+
+## Supported Platforms
+
+The Spectate Agent is currently tested and therefore supported on the following platforms:
+ - Ubuntu (x86_64, arm64)
+ - Debian (x86_64, arm64)
+ - CentOS / Red Hat (x86_64, arm64)
+ - Rocky Linux (x86_64, arm64)
+ - AlmaLinux (x86_64, arm64)
+ - Fedora (x86_64, arm64)
+ - MacOS (x86_64, arm64)
+
+According to some clients, it also works on:
+ - OpenSUSE MicroOS (x86_64)
+
+Please note that we do not officially support these platforms yet, but we are working on it.
+
+There are plans to support Windows in the future. If you need Windows support, please let us know by contacting us via [email](mailto:help@spectate.net) or live chat.
+
+## Installation
+
+Please follow the installation instructions when creating a new server in the Spectate dashboard.
+
+## Upgrading
+
+If an upgrade is available, there will be a notice in the dashboard with instructions on how to upgrade. Just a single command!
+
+## Configuration
+
+Depending on your platform, the configuration file is located in one of the following directories:
+ - `/etc/spectate/config.yaml`
+ - `$HOME/.spectated/config.yaml`
+
+The configuration file is in YAML format and looks like this:
+```yaml
+checks: # Configuration for check strategies
+  disk_usage:
+    exclude: # Exclude certain filesystems or mount points from being checked
+      devices: []
+      filesystems:
+        - squashfs
+        - vfat
+      mount_points: []
+  net:
+    exclude: # Exclude certain network interfaces from being checked, wildcard * is supported
+      interfaces:
+        - utun*
+        - llw*
+        - awdl*
+        - ap*
+        - bridge*
+        - anpi*
+        - gif*
+        - stf*
+        - en*
+    include: # Include allows you to override the exclude list to still include certain network interfaces
+      interfaces:
+        - en0
+        - eth0
+        - lo0
+host:
+  token: <YOUR UNIQUE HOST TOKEN> # The token is generated upon installation
+telemetry:
+  error_reporting: true # Enable or disable error reporting to our Sentry instance to help us improve the agent
+version: 1
+```
+
+## Source Code
+
+The Spectate Agent is open source and available on [GitHub](https://github.com/spectate/agent).
+
+[![Go Report Card](https://goreportcard.com/badge/github.com/spectate/agent)](https://goreportcard.com/report/github.com/spectate/agent) [![Go Reference](https://pkg.go.dev/badge/github.com/spectate/agent.svg)](https://pkg.go.dev/github.com/spectate/agent) [![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/spectate/agent)](https://github.com/spectate/agent/releases/latest) [![GitHub](https://img.shields.io/github/license/spectate/agent)](https://github.com/spectate/agent/blob/main/LICENSE)
